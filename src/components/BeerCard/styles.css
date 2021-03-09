@@ -1,0 +1,72 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.all-beers {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.beer {
+  flex: 0 0 calc(33.33% - 80px);
+  list-style: none;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 10px grey;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.beer i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.beer i.fa-heart {
+  color: red;
+}
+
+.beer .beer-img {
+  flex: 0 0 150px;
+  text-align: center;
+  align-self: center;
+}
+
+.beer .beer-img img {
+  height: 200px;
+  width: auto;
+}
+
+.beer .beer-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.beer .beer-info .details {
+  margin-top: auto;
+  display: flex;
+}
+
+.beer .beer-info .details p {
+  margin-bottom: 0;
+}
+
+.beer .beer-info .details p:first-child {
+  margin-right: auto;
+}
